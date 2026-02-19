@@ -1,36 +1,69 @@
 {
-	"name": "los-angeles-laners",
-	"description": "Build a personal website, blog, or portfolio with Astro.",
-	"cloudflare": {
-		"label": "Astro Framework Starter",
-		"products": [
-			"Workers"
-		],
-		"categories": [],
-		"preview_icon_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/394ca3c9-d351-4036-035a-9f6dfa26dd00/public",
-		"preview_image_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/f40a6577-eed5-4f3e-cef4-b5ef0a1be100/preview",
-		"publish": true
-	},
-	"dependencies": {
-		"@astrojs/cloudflare": "12.6.12",
-		"@astrojs/mdx": "4.3.12",
-		"@astrojs/rss": "4.0.14",
-		"@astrojs/sitemap": "3.6.0",
-		"astro": "5.16.2",
-		"typescript": "5.9.3"
-	},
-	"devDependencies": {
-		"wrangler": "4.56.0"
-	},
-	"private": true,
-	"scripts": {
-		"astro": "astro",
-		"build": "astro build",
-		"cf-typegen": "wrangler types",
-		"check": "astro build && tsc && wrangler deploy --dry-run",
-		"deploy": "wrangler deploy",
-		"dev": "astro dev",
-		"preview": "astro build && wrangler dev"
-	},
-	"type": "module"
+  "name": "accessible-astro-starter",
+  "description": "An Accessible Starter Theme for Astro including several accessibility features and tools to help you build faster.",
+  "version": "5.0.1",
+  "author": "Incluud",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://accessible-astro-starter.incluud.dev/",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [
+    "astro",
+    "astro-component",
+    "astro-components",
+    "accessible",
+    "accessibility",
+    "a11y",
+    "wcag",
+    "responsive",
+    "ui-library",
+    "ui-components",
+    "blog",
+    "portfolio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incluud/accessible-astro-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/incluud/accessible-astro-starter/issues"
+  },
+  "devDependencies": {
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/partytown": "^2.1.4",
+    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/js": "^9.39.2",
+    "@iconify-json/lucide": "^1.2.87",
+    "@types/sanitize-html": "^2.16.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "astro": "^5.16.15",
+    "astro-compress": "^2.3.9",
+    "astro-eslint-parser": "^1.2.2",
+    "astro-icon": "^1.1.5",
+    "eslint": "^9.39.2",
+    "eslint-plugin-astro": "^1.5.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "globals": "^17.2.0",
+    "prettier": "^3.8.1",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-css-order": "^2.2.0",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "sanitize-html": "^2.17.0",
+    "sass": "^1.97.3",
+    "svgo": "^4.0.0",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "accessible-astro-components": "^5.1.2",
+    "accessible-astro-launcher": "^2.0.0",
+    "astro-seo": "^1.1.0"
+  }
 }
