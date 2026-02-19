@@ -1,8 +1,15 @@
 {
+	"$schema": "./node_modules/wrangler/config-schema.json",
 	"name": "los-angeles-laners",
 	"compatibility_date": "2025-10-08",
 	"compatibility_flags": ["nodejs_compat"],
 	"main": "./dist/_worker.js/index.js",
+	"routes": [
+		{
+		"pattern": "lalaners.com",
+		"custom_domain": true
+		}
+  	],
 	"assets": {
 		"directory": "./dist",
 		"binding": "ASSETS"
