@@ -7,6 +7,8 @@ import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
 import { enhanceConfigForWorkspace } from './scripts/workspace-config.js'
 
+import cloudflare from '@astrojs/cloudflare';
+
 // Vite configuration with path aliases and SCSS settings
 const viteConfig = {
   css: {
@@ -41,6 +43,7 @@ export default defineConfig({
   site: 'https://accessible-astro-starter.incluud.dev',
   integrations: [compress(), icon(), mdx(), sitemap()],
   vite: enhanceConfigForWorkspace(viteConfig),
+
   env: {
     schema: {
       BLOG_API_URL: envField.string({
@@ -51,4 +54,6 @@ export default defineConfig({
       }),
     },
   },
+
+  adapter: cloudflare(),
 })
